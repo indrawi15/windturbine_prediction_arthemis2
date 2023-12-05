@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>optiSCADA</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- My Style -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <nav
+      class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 display-5">
+          <img
+            src="/static/img/logo-orbit.jpg"
+            width="100"
+            height="50"
+            alt="orbit campus"
+          />
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div class="navbar-nav m-auto py-0">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#predict">Prediction</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>
+          OptiSCADA:
+          <span>
+            Optimization of wind turbine operations using wind turbine
+            SCADA</span
+          >
+        </h1>
+        <p>Artemis Grove</p>
+      </main>
+    </section>
+
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="/static/img/Tentang-kami.png" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Apa tujuan mengambil tema wind turbine of SCADA?</h3>
+          <p>
+            Tujuan utama proyek ini adalah untuk mengembangkan model prediksi
+            yang mampu meramalkan daya aktif (LV ActivePower) yang akan
+            dihasilkan oleh turbin angin berdasarkan data SCADA yang tersedia.
+            Dengan prediksi yang akurat, operator turbin angin dapat
+            mengoptimalkan operasi dan perawatan, menghindari pemadaman yang
+            tidak terduga, dan meningkatkan efisiensi energi.
+          </p>
+          <h3>Apa itu Wind Turbine?</h3>
+          <p>
+            Wind turbine adalah perangkat yang menggunakan energi angin untuk
+            menghasilkan listrik. Dengan menggunakan baling-baling yang dipasang
+            pada rotor, wind turbine menangkap energi kinetik dari angin. Ketika
+            baling-baling berputar, rotor bergerak, dan gerakan ini kemudian
+            diubah menjadi energi listrik melalui generator. Tower mendukung
+            baling-baling dan rotor di ketinggian tertentu untuk menangkap angin
+            dengan lebih efisien. Wind turbine merupakan sumber energi
+            terbarukan yang ramah lingkungan dan telah menjadi komponen penting
+            dalam upaya global untuk mengurangi emisi gas rumah kaca dan
+            ketergantungan pada bahan bakar fosil.
+          </p>
+          <h3>Apa itu SCADA?</h3>
+          <p>
+            Sistem SCADA (Supervisory Control and Data Acquisition) adalah
+            sistem kontrol dan akuisisi data yang digunakan untuk memonitor dan
+            mengendalikan proses industri secara keseluruhan. Ini mencakup
+            sejumlah besar peralatan dan aplikasi di berbagai industri, seperti
+            energi, manufaktur, air, dan lainnya. Sistem SCADA membantu
+            meningkatkan efisiensi operasional, mengoptimalkan proses produksi,
+            dan meningkatkan keandalan sistem secara keseluruhan. Dengan
+            kemampuannya untuk mengintegrasikan berbagai perangkat dan sistem,
+            SCADA menjadi bagian krusial dalam industri otomasi dan kontrol.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -s->
+
+    <!-Dashboard Section Start -->
+    <section id="dashboard" class="dashboard">
+      <h2><span>OptiSCADA</span> Dashboard</h2>
+    
+      <div class="row">
+        <div class="dashboard-img">
+          <img src="/static/img/img-01.jpg" alt="Grafik Daya Aktif vs Kecepatan Angin Sebelum dilatih">
+          <h4>Gambar 1: Grafik Daya Aktif vs Kecepatan Angin Sebelum dilatih</h4>
+          <p>Grafik tersebut menunjukkan bahwa terdapat banyak sekali titik-titik yang berceceran dan menyebar. Hal ini menunjukkan bahwa kinerja dari turbin angin tersebut kurang optimal. Salah satu penyebabnya adalah karena turbin angin tersebut tidak dapat menghasilkan daya aktif yang optimal pada rentang kecepatan angin tertentu.</p>
+        </div>
+        <div class="dashboard-img">
+          <img src="/static/img/img-02.jpg" alt="Grafik produksi listrik turbin angin">
+          <h4>Gambar 2: Grafik produksi listrik turbin angin</h4>
+          <p>Grafik ini menunjukkan data produksi listrik turbin angin ditunjukkan dalam grafik sepanjang waktu. Warna kuning pada grafik menunjukkan semakin besar daya yang dihasilkan, sedangkan warna hitam menunjukkan daya yang dihasilkan rendah. Titik hitam yang masih berantakan pada grafik tersebut menunjukkan bahwa daya listrik yang dihasilkan oleh turbin angin tersebut bervariasi secara signifikan pada rentang kecepatan angin tertentu. Hal ini menunjukkan bahwa turbin angin tersebut tidak dapat menghasilkan daya listrik yang optimal pada rentang kecepatan angin tersebut.</p>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="dashboard-img">
+          <img src="/static/img/img-03.jpg" alt="Grafik kinerja wind turbine dalam dashboard OptiSCADA">
+          <h4>Gambar 3: Grafik kinerja wind turbine dalam dashboard OptiSCADA</h4>
+          <p>Grafik diatas menunjukkan bahwa terdapat garis yang lebih teratur dibandingkan grafik sebelum dilatih oleh model AI. Hal ini menunjukkan bahwa kinerja turbin angin tersebut telah meningkat setelah dilatih oleh model AI.
+
+            titik-titik yang lebih teratur pada grafik tersebut menunjukkan bahwa daya listrik yang dihasilkan oleh turbin angin tersebut lebih stabil pada rentang kecepatan angin tertentu.</p>
+        </div>
+        <div class="dashboard-img">
+          <img src="/static/img/img-04.jpg" alt="Grafik kinerja OptiSCADA dengan data yang sudah dilatih">
+          <h4>Gambar 4: Grafik kinerja OptiSCADA dengan data yang sudah dilatih</h4>
+          <p> Grafik diatas menunjukkan bahwa terdapat hubungan antara kecepatan angin dan daya listrik yang dihasilkan dibandingkan grafik sebelum dilatih oleh model AI.
+
+            titik-titik yang lebih teratur pada grafik tersebut menunjukkan bahwa daya listrik yang dihasilkan oleh turbin angin tersebut lebih stabil pada rentang kecepatan angin tertentu. Hal ini menunjukkan bahwa turbin angin tersebut telah dapat menyesuaikan sudut blade-nya secara optimal untuk memaksimalkan daya yang dihasilkan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Section End-->
+
+    <!-- prediction section start-->
+    <section id="predict" class="predict">
+      <h2><span>Wind Turbine</span> Prediction</h2>
+      <form method="post" action="/predict">
+        <label for="wind_speed">Wind Speed (m/s):</label>
+        <input type="number" name="wind_speed" required step="0.01" /><br />
+        <label for="wind_direction">Wind Direction (°):</label>
+        <input type="number" name="wind_direction" required step="0.01" /><br />
+        <button type="submit">Predict</button>
+      </form>
+      <p>Prediction LV ActivePower (kW): <span id="prediction"></span></p>
+    </section>
+    <!-- Add any other content or styling you want -->
+    <script>
+      // You can use JavaScript to update the prediction result after form submission
+      const predictionSpan = document.getElementById("prediction");
+      predictionSpan.textContent = "{{ prediction }}"; // This will be replaced with the actual prediction value from Flask
+    </script>
+    <!-- prediction section end-->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#predict">Prediction</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <span>Artemis Grove</span> | &copy; 2023.</p>
+      </div>
+    </footer>
+
+    <!-- Footer Section End -->
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- My Javascript -->
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
